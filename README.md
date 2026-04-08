@@ -60,6 +60,8 @@ https://github.com/Karthika-Ramesh/billing-invoice-system/deployments/github-pag
 
 ## 📸 Screenshots
 <img width="1304" height="676" alt="image" src="https://github.com/user-attachments/assets/fe0419f3-0d44-4529-b70c-fbfe5418d53e" />
+<img width="997" height="647" alt="image" src="https://github.com/user-attachments/assets/44c67981-d022-404e-8775-380fb5bd0d54" />
+
 
 
 ---
