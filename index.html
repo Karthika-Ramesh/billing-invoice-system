@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Premium Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>💼 Billing App</h2>
+        <p>Dashboard</p>
+        <p>Invoices</p>
+        <p>Reports</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <h1>🧾 Invoice Generator</h1>
+
+        <div class="top-info">
+            <input type="text" id="customerName" placeholder="Customer Name">
+            <p id="date"></p>
+            <p id="invoiceNo"></p>
+        </div>
+
+        <div class="card">
+
+            <div class="input-group">
+                <input type="text" id="itemName" placeholder="Item">
+                <input type="number" id="price" placeholder="Price">
+                <input type="number" id="quantity" placeholder="Qty">
+                <button onclick="addItem()">➕</button>
+            </div>
+
+            <table id="billTable">
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Total</th>
+                </tr>
+            </table>
+
+            <div class="totals">
+                <p>Subtotal: ₹ <span id="subtotal">0</span></p>
+                <p>GST (18%): ₹ <span id="gst">0</span></p>
+                <h2>Total: ₹ <span id="total">0</span></h2>
+            </div>
+
+            <div class="buttons">
+                <button onclick="generateInvoice()">Generate</button>
+                <button onclick="printInvoice()">Print</button>
+            </div>
+
+            <div id="invoice"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
